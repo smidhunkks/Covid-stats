@@ -13,7 +13,9 @@ function apfh(){
 .then(response =>response.json())
 .then(data=>{
     let output=`<h1 class="reshead">World Wide Stats</h1>
-    <img src="images/confirmed.png" class="cnfrm">`;
+    <div class="rsdiv">
+    <img src="images/confirmed.png" class="cnfrm">
+    </div>`;
     console.log(data);
     y.innerHTML=output;
 })

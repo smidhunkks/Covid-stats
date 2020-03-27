@@ -63,3 +63,14 @@
     color:white;
     font-family: 'Roboto Condensed', sans-serif;
 }
+.cnfrm{
+    width:100px;
+    height:60px;
+}
+.rsdiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
