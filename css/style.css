@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.main{
+    background-image: url("../images/COVID-19_Background.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height:100%;
+}
+.maindiv{
+    padding-top: 100px;
+}
+.heading{
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 70px;
+    
+}
+.search{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+}
+#srbr{
+    
+    border-radius: 35px;
+    border: none;
+    width:40%;
+    height: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    opacity: .9;
+    
+}
+.srbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#butn{
+    width:100px;
+    height:50px;
+    font-weight:bolder;
+    background-color: rgb(255, 196, 0,.99);
+    border:none;
+}
+#butn:hover{
+    background-color: rgba(255, 196, 0, 0.9);
+    transition: .2s;
+}
+.res{
+    margin-top: 30px;
+}
+.reshead{
+    text-align:center;
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
