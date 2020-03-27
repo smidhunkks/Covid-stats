@@ -28,7 +28,7 @@ function apfh(){
             </div>
         
         
-            <img src="images/death.png" class="rcvr">
+            <img src="images/death.png" class="dth">
             <div class="innerdiv">
                 <h3 class="fntclr">Death</h3>
                 <h4 class="fntclr">${data[0].deaths}</h4>
