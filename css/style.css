@@ -70,11 +70,7 @@
     color:white;
     font-family: 'Roboto Condensed', sans-serif;
 }
-.cnfrm{
-    width:100px;
-    height:60px;
 
-}
 .rsdiv{
     display: flex;
     flex-direction: row;
@@ -88,6 +84,10 @@
     color:white;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
+}
+.cnfrm{
+    width:100px;
+    height:60px;
 }
 .rcvr{
     width:90px;
@@ -105,6 +105,9 @@
         background-size: cover;
         height:100%;
     }
+    .maindiv{
+        padding-top: 10px;
+    }
     .heading{
         font-size: 40px;
     }
@@ -118,6 +121,26 @@
     #butn{
         width:60px;
         height:30px;
+    }
+    .rsdiv{
+        flex-direction: column;
+    }
+    .cnfrm{
+        width:200px;
+        height: 120px;
+
+    }
+    .rcvr{
+        width:160px;
+        height:160px;
+    }
+    .dth{
+        width: 120px;
+        height:120px;
+    }
+    .fntclr{
+        font-size: 18px;
+        
     }
 
 }
