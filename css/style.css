@@ -123,8 +123,12 @@
         width:60px;
         height:30px;
     }
+    .res{
+        margin-top: 15px;
+    }
     .rsdiv{
         flex-direction: column;
+        margin-top:12px ;
     }
     .cnfrm{
         width:150px;
