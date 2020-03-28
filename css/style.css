@@ -103,6 +103,7 @@
         background-position: center;
         background-repeat: repeat;
         background-size: cover;
+        background-attachment: fixed;
         height:100%;
     }
     .maindiv{
