@@ -126,17 +126,17 @@
         flex-direction: column;
     }
     .cnfrm{
-        width:200px;
-        height: 120px;
+        width:150px;
+        height: 90px;
 
     }
     .rcvr{
-        width:160px;
-        height:160px;
+        width:120px;
+        height:120px;
     }
     .dth{
-        width: 120px;
-        height:120px;
+        width: 90px;
+        height:90px;
     }
     .fntclr{
         font-size: 18px;
