@@ -37,6 +37,7 @@
     height: 50px;
     padding: 10px;
     padding-left: 20px;
+    padding-right: 20px;
     opacity: .9;
     
 }
@@ -90,4 +91,13 @@
 .dth{
     width:60px;
     height:60px;
+}
+@media(max-width:510px){
+    .main{
+        background-image: url("../images/COVID-19_mobile.jpg");
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        height:100%;
+    }
 }
