@@ -51,7 +51,6 @@ function cntryfetch(){
    /* console.log("cntryfetch");*/
     var a="https://covid-19-data.p.rapidapi.com/country?format=undefined&name=";
     var b=document.getElementById("srbr").value;
-    
     a+=b;
     /*console.log(a);*/
 fetch(a, {
@@ -94,30 +93,97 @@ fetch(a, {
 });
 }
 
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
+/*------------------------------------graph function------------------------*/
+function historyfh(){
+
+var b=document.getElementById("srbr").value;
+console.log(b);
+var y=document.getElementById("res");
+var op;
+var Label=new Array();
+var active=new Array();
+var recover=new Array();
+var death=new Array();
+var a="https://covid-193.p.rapidapi.com/history?country=";
+a+=b;
+console.log(a);
+var i=0;
+    fetch(a, {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "covid-193.p.rapidapi.com",
+            "x-rapidapi-key": "7817005512msh32521a41050f8b3p1ba7bcjsn466b7a5211dd"
+        }
+    })
+    .then(response =>response.json())
+    .then(data=>{
+        var l=data.response.length;
+        l=l-1;
+        for(i=l;i>=0;i--)
+        {
+            Label[l-i]=data.response[i].day;
+            active[l-i]=data.response[i].cases.active;
+            recover[l-i]=data.response[i].cases.recovered;
+            death[l-i]=data.response[i].deaths.total;
+        }
+        /*---------------------graph script----------------------------*/
+        var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'line',
-
     // The data for our dataset
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: Label,
         datasets: [{
-            label: 'My First dataset',
-            backgroundColor: 'red',
-            borderColor: 'white',
-            data: [0, 10, 5, 2, 20, 30, 0]
+            label: 'Active cases',
+            backgroundColor:'rgb(255, 102, 102,.6)',
+            borderColor: 'red',
+            data: active
         },
         {
-            label: 'My second dataset',
-            backgroundColor: 'blue',
-            borderColor: 'white',
-            data: [0, 15, 25, 1, 2, 5, 0]
+            label: 'Recovered',
+           backgroundColor: 'rgb(51, 204, 51,.6)',
+            borderColor: 'green',
+            data: recover
+        },
+        {
+            label: 'Death',
+            backgroundColor: 'rgb(179, 179, 179,.6)',
+            borderColor: 'grey',
+            data: death
         }
     
     ]
     },
 
     // Configuration options go here
-    options: {}
+    options: {
+        legend: {
+            labels: {
+                // This more specific font property overrides the global property
+                fontColor: 'rgb(255, 255, 255)',
+                FontFamily:'Monospace'
+            }
+        }
+    }
 });
+/*---------------------graph script end----------------------------*/
+window.scrollBy(0, 150);
+
+
+
+
+
+
+
+
+
+        console.log(data);
+    })
+    .catch(err => {
+        console.log(err);
+    });
+    
+    return 1;
+}
+

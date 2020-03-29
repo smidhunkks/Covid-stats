@@ -7,7 +7,15 @@
 <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">   
 <script src="js/Chart.js"></script>
 </head>
-<body class="main" id="bdy">
+<body class="main" onload="historyfh()">
+<!-------------------------------------------navbar---------------------------------------->
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html" class="nav-item">Home</a></li>
+            <li><a href="graph.html" class="nav-item">Growth</a></li>
+        </ul>
+    </div>
+<!-------------------------------------------navbar---------------------------------------->
     <div class="maindiv">
         <div >
             <h1 class="heading">Covid Stats</h1>
@@ -18,19 +26,24 @@
             
         </div>
         <div class="srbtn">
-            <button type="button" id="butn" onclick="cntryfetch()">Search</button>
+            <button type="button" id="butn" onclick="historyfh()">Search</button>
         </div>
     </div>
     <div class="res" id="res">
-
+        <div class="rsdiv">
+            <div class="chart">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
     </div>
     <!------------------------------------------------------------------------------------------------------>
-    <div class="chart">
-    <canvas id="myChart"></canvas>
-    </div>
+    
+    
      <!------------------------------------------------------------------------------------------------------>
     <footer>
-        <p class="footer_text">Created by <a href="https://github.com/smidhunkks">Midhunkrishna</a></p>
+        <div>
+            <p class="footer_text">Created by <a href="https://github.com/smidhunkks" class="footer_text">Midhunkrishna</a></p>
+        </div>
     </footer>
     <!-----------------------------------------------Script section------------------------------------------>
     <script src="js/script.js"></script>
