@@ -25,8 +25,7 @@ li{
     color:white;
     list-style-type: none;
     margin-right: 30px;
-    font-size: 30px;
-    
+    font-size: 30px;  
 }
 .main{
     background-image: url("../images/COVID-19_Background.jpg");
@@ -123,7 +122,25 @@ li{
     width:60px;
     height:60px;
 }
-@media(max-width:510px){
+.footer_text{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    opacity:.6;
+    margin-top: 18px;
+}
+.chart{
+    width:600px;
+    color:white;
+}
+#myChart{
+    color:white;
+}
+
+@media(max-width:650px){
+    .nav-item{
+        font-size: 17px;
+    }
     .main{
         background-image: url("../images/COVID-19_mobile.jpg");
         background-position: left;
@@ -173,19 +190,9 @@ li{
         font-size: 18px;
         
     }
+    .chart{
+        width:90%;
+        color:white;
+    }
 
-}
-.footer_text{
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    opacity:.6;
-    margin-top: 18px;
-}
-.chart{
-    width:600px;
-    color:white;
-}
-#myChart{
-    color:white;
 }
