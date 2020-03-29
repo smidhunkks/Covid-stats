@@ -149,3 +149,12 @@
     }
 
 }
+.footer_text,a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    opacity:.6;
+}
+.chart{
+    width:600px;
+}
