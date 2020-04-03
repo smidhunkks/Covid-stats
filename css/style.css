@@ -141,6 +141,9 @@ li{
     .nav-item{
         font-size: 17px;
     }
+    .navbar{
+        height:40px;
+    }
     .main{
         background-image: url("../images/COVID-19_mobile.jpg");
         background-position: left;
