@@ -119,7 +119,7 @@ var i=0;
     .then(data=>{
         var l=data.response.length;
         l=l-1;
-        for(i=l;i>=0;i--)
+        for(i=l;i>=l-30;i--)
         {
             Label[l-i]=data.response[i].day;
             active[l-i]=data.response[i].cases.active;
